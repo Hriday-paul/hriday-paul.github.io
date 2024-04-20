@@ -120,7 +120,7 @@ const Navbar = () => {
                         </div>
                     </Link>} onClose={() => setOpen(false)
                     } 
-                    open={isOpen}>
+                    open={isOpen} width={300}>
 
                     <ul className="flex flex-col gap-y-5  pl-5">
                         <li className="text-lg font-popins font-medium text-white">

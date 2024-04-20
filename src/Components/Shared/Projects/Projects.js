@@ -1,41 +1,42 @@
-import Image from "next/image";
+
 import parcelImg from '@/images/parcel-web-image.png'
 import textEditor from '@/images/richEditor-img.png'
+import Project from "@/Components/Ui/Project/Project";
 
 const dataList1 = [
     {
         id: 0,
-        name: 'Diagnostic Center',
-        desc: 'It is a Diagnostic Center Managment system website.',
-        photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1712410648/docs/ns41zajpflhotjef6nmq.png',
-        skills: ['Tailwind', 'React', 'Firebase', 'Express', 'Mongodb', 'JWT'],
-        live: 'https://medico-serve.netlify.app',
-        code: 'https://github.com/Hriday-paul/Medical-care'
-    },
-    {
-        id: 1,
-        name: 'Study Tracker',
-        desc: 'I have developed a Study tracker application.',
+        name: 'Study Table',
+        desc: 'Crafted a web-based Study Table application simplifying academic organization and task management.',
         photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1712411814/docs/kprfdksscupycl0kvatx.png',
-        skills: ['Tailwind', 'React', 'Firebase', 'Express', 'Mongodb', 'JWT'],
+        skills: ['Tailwind', 'React', 'Type script', 'Redux', 'Firebase', 'Express', 'Mongodb'],
         live: 'https://study-track.netlify.app',
         code: 'https://github.com/Hriday-paul/study-tracker'
     },
+    {
+        id: 1,
+        name: 'Diagnostic Center',
+        desc: 'Developed a user-friendly web based diagnostic center management system website for efficient appointment booking and result tracking.',
+        photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1712410648/docs/ns41zajpflhotjef6nmq.png',
+        skills: ['Tailwind', 'React', 'Firebase', 'Express', 'Mongodb'],
+        live: 'https://medico-serve.netlify.app',
+        code: 'https://github.com/Hriday-paul/Medical-care'
+    }
 ]
 const dataList2 = [
     {
         id: 2,
         name: 'Chat Application',
-        desc: 'I have developed a web based real time chat application.',
+        desc: 'This chat application facilitates real-time communication through text, video, connecting users across various devices and platforms.',
         photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1712411973/docs/wmsfxw4rodj6gkn6ular.png',
-        skills: ['Tailwind', 'React', 'TanStack Query', 'Firebase', 'Express', 'Mongodb', 'JWT'],
+        skills: ['Tailwind', 'React', 'Firebase', 'Express', 'Mongodb', 'Socket-io'],
         live: 'https://message-friend.netlify.app',
         code: 'https://github.com/Hriday-paul/Chat-web'
     },
     {
         id: 3,
         name: 'Parcel Delivery',
-        desc: 'It is a parcel delivery management website. This is role base application.',
+        desc: 'Created a Parcel Delivery Management website for easy tracking and scheduling of deliveries.',
         photo: parcelImg,
         skills: ['Tailwind', 'React', 'TanStack Query', 'Firebase', 'Express', 'Mongodb', 'JWT'],
         live: 'https://poetic-toffee-1fafd9.netlify.app',
@@ -46,18 +47,18 @@ const dataList3 = [
     {
         id: 4,
         name: 'Rich Text Editor',
-        desc: 'I am created a web based text editor useing js. This website is only frontend website.',
+        desc: 'A Rich Text Editor application enables users to create and edit text with diverse formatting options.',
         photo: textEditor,
-        skills: ['Tailwind', 'React', 'TanStack Query', 'Firebase', 'Express', 'Mongodb', 'JWT'],
+        skills: ['Html', 'Css', 'Bootstrap', 'Javascript'],
         live: 'https://hriday-paul.github.io/web-text-editor',
         code: 'https://github.com/Hriday-paul/web-text-editor'
     },
     {
         id: 5,
         name: 'Online Shoping',
-        desc: 'I have to developed a Online Shoping website.',
+        desc: 'Designed an intuitive online shopping website for seamless browsing, ordering, and checkout experiences.',
         photo: 'https://i.ibb.co/h2wyf13/Screenshot-2023-12-31-140130.png',
-        skills: ['Tailwind', 'React', 'TanStack Query', 'Firebase', 'Express', 'Mongodb', 'JWT'],
+        skills: ['Tailwind', 'React', 'Firebase', 'Express', 'Mongodb'],
         live: 'https://online-shop-ferioyala.netlify.app',
         code: 'https://github.com/Hriday-paul/online-shop-stack'
     }
@@ -75,105 +76,27 @@ const Projects = () => {
 
                     {
                         dataList1.map((item) => {
-                            return <div key={item.id} data-aos={item.id % 2 == 0 ? "zoom-in-right" : "zoom-in-left"} className="w-[340px] p-4 bg-[#061c28] shadow-xl shadow-[#041721] mx-auto md:mx-0">
-                                <div className='relative h-36 w-auto'>
-                                    <Image fill={true} placeholder='blur' blurDataURL="data:..." className="mb-5 rounded-md" src={item.photo} alt="project image" />
-                                </div>
-                                <div className="my-3 flex flex-row flex-wrap gap-2">
-                                    {
-                                        item.skills.map((skill, indx) => {
-                                            return <span key={skill + indx} className="bg-[#005f84] py-1 px-2 rounded-full text-xs font-popins text-gray-300" >
-                                                {skill}
-                                            </span>
-                                        })
-                                    }
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-bold font-popins text-gray-200">{item.name}</h3>
-                                    <p className="mt-3 text-base font-medium font-popins text-gray-400">{item.desc}</p>
-                                </div>
-                                <div className="flex flex-row gap-x-8 items-center justify-between mt-5">
-                                    <a href={item.live} target="blank" className="bg-transparent hover:bg-[#00A6E8] text-[#00A6E8] font-medium hover:text-white py-2 px-2.5 text-sm border border-[#00A6E8] hover:border-transparent rounded-full font-popins w-full text-center">
-                                        Live Demo
-                                    </a>
-                                    <a href={item.code} target="blank" className="bg-transparent hover:bg-[#00A6E8] text-[#00A6E8] font-medium hover:text-white py-2 px-2.5 text-sm border border-[#00A6E8] hover:border-transparent rounded-full font-popins w-full text-center">
-                                        Source code
-                                    </a>
-                                </div>
-                            </div>
+                            return <Project key={item.id} item={item} />
                         })
                     }
-
 
                 </div>
                 <div className="flex flex-col md:flex-row justify-center items-center gap-x-0 gap-y-5 md:gap-8 mt-8">
 
                     {
                         dataList2.map((item) => {
-                            return <div key={item.id} data-aos={item.id % 2 == 0 ? "zoom-in-right" : "zoom-in-left"} className="w-[350px] p-4 bg-[#061C28] shadow-xl shadow-[#15151E] mx-auto md:mx-0">
-                                <div className='relative h-44 w-auto'>
-                                    <Image fill={true} placeholder='blur' blurDataURL="data:..." className="mb-5 rounded-md" src={item.photo} alt="project image" />
-                                </div>
-                                <div className="my-3 flex flex-row flex-wrap gap-2">
-                                    {
-                                        item.skills.map((skill, indx) => {
-                                            return <span key={skill + indx} className="bg-[#005f84] py-1 px-2 rounded-full text-xs font-popins text-gray-300" >
-                                                {skill}
-                                            </span>
-                                        })
-                                    }
-                                </div>
-                                <div className='grow'>
-                                    <h3 className="text-xl font-bold font-popins text-gray-200">{item.name}</h3>
-                                    <p className="mt-3 text-base font-medium font-popins text-gray-400">{item.desc}</p>
-                                </div>
-                                <div className="flex flex-row gap-x-8 items-center justify-between mt-5">
-                                    <a href={item.live} target="blank" className="bg-transparent hover:bg-[#00A6E8] text-[#00A6E8] font-medium hover:text-white py-2 px-2.5 text-sm border border-[#00A6E8] hover:border-transparent rounded-full font-popins w-full text-center">
-                                        Live Demo
-                                    </a>
-                                    <a href={item.code} target="blank" className="bg-transparent hover:bg-[#00A6E8] text-[#00A6E8] font-medium hover:text-white py-2 px-2.5 text-sm border border-[#00A6E8] hover:border-transparent rounded-full font-popins w-full text-center">
-                                        Source code
-                                    </a>
-                                </div>
-                            </div>
+                            return <Project key={item.id} item={item} />
                         })
                     }
-
 
                 </div>
                 <div className="flex flex-col md:flex-row justify-center items-center gap-x-0 gap-y-5 md:gap-8 mt-8">
 
                     {
                         dataList3.map((item) => {
-                            return <div key={item.id} data-aos={item.id % 2 == 0 ? "zoom-in-right" : "zoom-in-left"} className="w-[350px] p-4 bg-[#061C28] shadow-xl shadow-[#15151E] mx-auto md:mx-0">
-                                <div className='relative h-44 w-auto'>
-                                    <Image fill={true} placeholder='blur' blurDataURL="data:..." className="mb-5 rounded-md" src={item.photo} alt="project image" />
-                                </div>
-                                <div className="my-3 flex flex-row flex-wrap gap-2">
-                                    {
-                                        item.skills.map((skill, indx) => {
-                                            return <span key={skill + indx} className="bg-[#005f84] py-1 px-2 rounded-full text-xs font-popins text-gray-300" >
-                                                {skill}
-                                            </span>
-                                        })
-                                    }
-                                </div>
-                                <div className='grow'>
-                                    <h3 className="text-xl font-bold font-popins text-gray-200">{item.name}</h3>
-                                    <p className="mt-3 text-base font-medium font-popins text-gray-400">{item.desc}</p>
-                                </div>
-                                <div className="flex flex-row gap-x-8 items-center justify-between mt-5">
-                                    <a href={item.live} target="blank" className="bg-transparent hover:bg-[#00A6E8] text-[#00A6E8] font-medium hover:text-white py-2 px-2.5 text-sm border border-[#00A6E8] hover:border-transparent rounded-full font-popins w-full text-center">
-                                        Live Demo
-                                    </a>
-                                    <a href={item.code} target="blank" className="bg-transparent hover:bg-[#00A6E8] text-[#00A6E8] font-medium hover:text-white py-2 px-2.5 text-sm border border-[#00A6E8] hover:border-transparent rounded-full font-popins w-full text-center">
-                                        Source code
-                                    </a>
-                                </div>
-                            </div>
+                            return <Project key={item.id} item={item} />
                         })
                     }
-
 
                 </div>
             </div>
