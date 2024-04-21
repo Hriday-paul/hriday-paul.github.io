@@ -37,7 +37,7 @@ const HomeAbout = () => {
 
                     <div data-aos="zoom-in-left" className="mx-auto order-1 md:order-2">
 
-                        <div className="mockup-code w-80 md:w-40 lg:w-full">
+                        <div className="mockup-code w-80 md:w-40 lg:w-full bg-white/5 text-gray-300">
                             <pre data-prefix="1"><code>{`const AboutMe = {`}</code></pre>
                             <pre data-prefix="2"><code>{`  Name: "Hriday Chandra Paul",`}</code></pre>
                             <pre data-prefix="3"><code>{`  Role: "Web Developer",`}</code></pre>

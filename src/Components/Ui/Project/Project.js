@@ -3,7 +3,7 @@ import { SiGithub } from "react-icons/si";
 
 const Project = ({ item }) => {
     return (
-        <div key={item.id} data-aos={item.id % 2 == 0 ? "zoom-in-right" : "zoom-in-left"} className="w-[365px] p-4 bg-white/5 shadow-xl shadow-[#082231] mx-auto md:mx-0  rounded-md ">
+        <div key={item.id} data-aos={item.id % 2 == 0 ? "zoom-in-right" : "zoom-in-left"} className="w-80 lg:w-[365px] p-4 bg-white/5 shadow-xl shadow-[#082231] mx-auto md:mx-0  rounded-md ">
             <div className='relative h-44 w-auto'>
                 <Image fill={true} placeholder='blur' blurDataURL="data:..." className="mb-5 rounded-md" src={item.photo} alt="project image" />
             </div>
