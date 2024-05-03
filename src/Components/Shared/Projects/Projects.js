@@ -10,7 +10,7 @@ const dataList1 = [
         desc: 'Crafted a web-based Study Table application simplifying academic organization and task management.',
         photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1712411814/docs/kprfdksscupycl0kvatx.png',
         skills: ['Tailwind', 'React', 'Type script', 'Redux', 'Firebase', 'Express', 'Mongodb'],
-        live: 'https://study-track.netlify.app',
+        live: 'https://study-table.netlify.app',
         code: 'https://github.com/Hriday-paul/study-tracker'
     },
     {
@@ -29,7 +29,7 @@ const dataList2 = [
         name: 'Chat Application',
         desc: 'This chat application facilitates real-time communication through text, video, connecting users across various devices and platforms.',
         photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1712411973/docs/wmsfxw4rodj6gkn6ular.png',
-        skills: ['Tailwind', 'React', 'Firebase', 'Express', 'Mongodb', 'Socket-io'],
+        skills: ['Tailwind', 'React', 'Type-script', 'Redux', 'Firebase', 'Express', 'Mongodb', 'Socket-io'],
         live: 'https://message-friend.netlify.app',
         code: 'https://github.com/Hriday-paul/Chat-web'
     },

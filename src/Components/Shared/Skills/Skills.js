@@ -5,6 +5,7 @@ import { FaGithub, FaFigma, FaNodeJs } from "react-icons/fa";
 import { SiExpress, SiTypescript, SiTailwindcss, SiJavascript, SiFirebase, SiMongodb, SiGit, SiVisualstudiocode, SiReact } from "react-icons/si";
 import { BiLogoNetlify } from "react-icons/bi";
 import { Tooltip } from "antd";
+import { SiNextdotjs } from "react-icons/si";
 
 const Skills = () => {
     return (
@@ -93,23 +94,26 @@ const Skills = () => {
                                             </SingleSkill>
                                         </Tooltip>
 
-                                        <Tooltip color="#0EA5E9" title="Mysql">
+                                        <Tooltip color="#0EA5E9" title="Next Js">
                                             <SingleSkill>
-                                                <SiMysql className="text-[20px] md:text-[40px] text-white"></SiMysql>
+                                                <div className="h-4 md:h-8 w-4 md:w-8">
+                                                    <Image fill={true} src='https://res.cloudinary.com/devlj6p7h/image/upload/v1714762396/docs/lbuwdez6ukgbqzggopzc.png' alt="next js logo" />
+                                                </div>
                                             </SingleSkill>
                                         </Tooltip>
 
                                     </div>
                                     <div className="flex w-fit mx-auto gap-3">
+                                        
                                         <Tooltip color="#0EA5E9" title="Github">
                                             <SingleSkill>
                                                 <FaGithub className="text-white text-[16px] md:text-[32px]"></FaGithub>
                                             </SingleSkill>
                                         </Tooltip>
 
-                                        <Tooltip color="#0EA5E9" title="Vs code">
+                                        <Tooltip color="#0EA5E9" title="Mysql">
                                             <SingleSkill>
-                                                <SiVisualstudiocode className="text-[#29A3F1] text-[16px] md:text-[32px]" />
+                                                <SiMysql className="text-[20px] md:text-[40px] text-white"></SiMysql>
                                             </SingleSkill>
                                         </Tooltip>
 
@@ -132,6 +136,12 @@ const Skills = () => {
                                         <Tooltip color="#0EA5E9" title="Figma">
                                             <SingleSkill>
                                                 <FaFigma className="text-white text-[16px] md:text-[32px]"></FaFigma>
+                                            </SingleSkill>
+                                        </Tooltip>
+
+                                        <Tooltip color="#0EA5E9" title="Vs code">
+                                            <SingleSkill>
+                                                <SiVisualstudiocode className="text-[#29A3F1] text-[16px] md:text-[32px]" />
                                             </SingleSkill>
                                         </Tooltip>
 
