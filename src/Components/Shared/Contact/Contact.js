@@ -27,6 +27,7 @@ const Contact = () => {
     return (
         <div className="z-40 -mt-16" id="contact">
             <section className="bg-[#082231]">
+                
                 <div className="py-20 2xl:max-w-7xl max-w-6xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-popins text-white text-center mb-5">Contact Me</h2>
 

@@ -66,8 +66,11 @@ const dataList3 = [
 
 const Projects = () => {
     return (
-        <div className=" bg-[#082231] -mt-16 pb-20 z-20 projects" id="projects">
-            <div className="2xl:max-w-7xl max-w-6xl mx-auto px-4">
+        <div className="bg-[#082231] -mt-16 pb-20 z-20 projects relative" id="projects">
+            <div className='absolute top-0 left-0 h-full w-full opacity-30 !bg-[linear-gradient(#464646_1px,_transparent_1px),_linear-gradient(to_right,_#464646_1px,_#082231_1px)] [background-size:22px_22px]'>
+            </div>
+
+            <div className="2xl:max-w-7xl max-w-6xl mx-auto px-4 z-30">
                 <div className="text-center pt-20 pb-10">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-popins text-white">Projects</h2>
                     <p className="mt-3 md:mt-3 lg:mt-5 text-base md:text-lg lg:text-xl font-medium font-popins text-gray-400">Here are some of my best projects in web development.</p>
