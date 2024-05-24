@@ -18,9 +18,9 @@ const dataList1 = [
         name: 'Diagnostic Center',
         desc: 'Developed a user-friendly web based diagnostic center management system website for efficient appointment booking and result tracking.',
         photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1712410648/docs/ns41zajpflhotjef6nmq.png',
-        skills: ['Tailwind', 'React', 'Firebase', 'Express', 'Mongodb'],
-        live: 'https://medico-serve.netlify.app',
-        code: 'https://github.com/Hriday-paul/Medical-care'
+        skills: ['Tailwind', 'Next Js', 'Next Auth', 'Type Script', 'Firebase', 'Express', 'Mongodb'],
+        live: 'https://daigo-bd.vercel.app',
+        code: 'https://github.com/Hriday-paul/daigo-bd'
     }
 ]
 const dataList2 = [
