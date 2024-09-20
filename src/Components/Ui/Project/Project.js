@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { SiGithub } from "react-icons/si";
 
 const Project = ({ item }) => {
@@ -24,14 +25,14 @@ const Project = ({ item }) => {
                 </div>
                 <div >
                     <div className="flex flex-row gap-x-3 items-center mt-3">
-                        <a href={item.code} target="_blank" className="inline-flex overflow-hidden text-white bg-gray-900 rounded group cursor-pointer">
+                        {item?.code && <Link href={item.code} target="_blank" className="inline-flex overflow-hidden text-white bg-gray-900 rounded group cursor-pointer">
                             <span className="px-3 py-2 text-white bg-sky-500 group-hover:bg-sky-600 flex items-center justify-center">
                                 <SiGithub className="text-white text-md md:text-base" />
                             </span>
                             <span className="px-2 py-2 text-xs">Source code</span>
-                        </a>
+                        </Link>}
 
-                        <a href={item.live} target="_blank" className="inline-flex overflow-hidden text-white bg-gray-900 rounded group cursor-pointer">
+                        <Link href={item.live} target="_blank" className="inline-flex overflow-hidden text-white bg-gray-900 rounded group cursor-pointer">
                             <span className="px-3 py-2 text-white bg-sky-500 group-hover:bg-sky-600 flex items-center justify-center">
                                 {/* <SiLinktree className="text-white text-md md:text-base" /> */}
                                 <div className="relative h-3 w-3">
@@ -39,7 +40,7 @@ const Project = ({ item }) => {
                                 </div>
                             </span>
                             <span className="px-2 py-2 text-xs">Live demo</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

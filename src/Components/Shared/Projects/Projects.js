@@ -1,9 +1,17 @@
 
-import parcelImg from '@/images/parcel-web-image.png'
 import textEditor from '@/images/richEditor-img.png'
 import Project from "@/Components/Ui/Project/Project";
 
 const dataList1 = [
+    {
+        id: 0,
+        name: 'Construction',
+        desc: 'Developed a real-life web application to manage and streamline construction processes, from project planning to completion.',
+        photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1726817613/test/cgxctlrjdflmg0qjmt0z.png',
+        skills: ['Tailwind', 'Next Js', 'Redux query', 'JWT', 'Mysql'],
+        live: 'https://nanccooman.org',
+        code : ''
+    },
     {
         id: 0,
         name: 'Study Table',
@@ -13,35 +21,26 @@ const dataList1 = [
         live: 'https://study-table.netlify.app',
         code: 'https://github.com/Hriday-paul/study-tracker'
     },
+]
+const dataList2 = [
     {
-        id: 1,
+        id: 2,
         name: 'Diagnostic Center',
         desc: 'Developed a user-friendly web based diagnostic center management system website for efficient appointment booking and result tracking.',
         photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1712410648/docs/ns41zajpflhotjef6nmq.png',
         skills: ['Tailwind', 'Next Js', 'Next Auth', 'Type Script', 'Firebase', 'Express', 'Mongodb'],
         live: 'https://daigo-bd.vercel.app',
         code: 'https://github.com/Hriday-paul/daigo-bd'
-    }
-]
-const dataList2 = [
+    },
     {
-        id: 2,
+        id: 3,
         name: 'Chat Application',
         desc: 'This chat application facilitates real-time communication through text, video, connecting users across various devices and platforms.',
         photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1712411973/docs/wmsfxw4rodj6gkn6ular.png',
         skills: ['Tailwind', 'React', 'Type-script', 'Redux', 'Firebase', 'Express', 'Mongodb', 'Socket-io'],
         live: 'https://message-friend.netlify.app',
         code: 'https://github.com/Hriday-paul/Chat-web'
-    },
-    {
-        id: 3,
-        name: 'Parcel Delivery',
-        desc: 'Created a Parcel Delivery Management website for easy tracking and scheduling of deliveries.',
-        photo: parcelImg,
-        skills: ['Tailwind', 'React', 'TanStack Query', 'Firebase', 'Express', 'Mongodb', 'JWT'],
-        live: 'https://poetic-toffee-1fafd9.netlify.app',
-        code: 'https://github.com/Hriday-paul/parcel-delivary-management'
-    },
+    }, 
 ]
 const dataList3 = [
     {
