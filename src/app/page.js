@@ -1,5 +1,6 @@
 import Contact from "@/Components/Shared/Contact/Contact";
 import Education from "@/Components/Shared/Education/Education";
+import Experiences from "@/Components/Shared/Experiences/Experiences";
 import Footer from "@/Components/Shared/Footer/Footer";
 import HomeAbout from "@/Components/Shared/HomeAbout/HomeAbout";
 import Navbar from "@/Components/Shared/Navbar/Navbar";
@@ -19,6 +20,7 @@ export default function Home() {
         </div>
       </div>
       <Skills />
+      <Experiences />
       <Projects />
       <Education />
       <Contact />
