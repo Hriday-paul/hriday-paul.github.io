@@ -22,26 +22,6 @@ export default function ExperienceCard({ experience }) {
                         </span>
                     })
                 }
-                {/* <span className="bg-white/10 py-1 px-2 rounded-full text-xs md:text-sm font-popins text-gray-300" >
-                    React
-                </span>
-                <span className="bg-white/10 py-1 px-2 rounded-full text-xs md:text-sm font-popins text-gray-300 whitespace-nowrap" >
-                    Next Js
-                </span>
-
-                <span className="bg-white/10 py-1 px-2 rounded-full text-xs md:text-sm font-popins text-gray-300" >
-                    Redux
-                </span>
-
-                <span className="bg-white/10 py-1 px-2 rounded-full text-xs md:text-sm font-popins text-gray-300">
-                    Python
-                </span>
-                <span className="bg-white/10 py-1 px-2 rounded-full text-xs md:text-sm font-popins text-gray-300" >
-                    Django
-                </span>
-                <span className="bg-white/10 py-1 px-2 rounded-full text-xs md:text-sm font-popins text-gray-300 text-wrap whitespace-nowrap" >
-                    Type script
-                </span> */}
             </div>
 
             <ul className="list-disc px-8 md:px-10 py-3 text-gray-200 text-sm md:text-base space-y-2">
