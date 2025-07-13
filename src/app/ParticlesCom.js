@@ -688,24 +688,15 @@ const ParticlesCom = () => {
   }
 
   return (
-    // <div style={containerStyle}>
-    //   {init && <Particles
 
-    //     className="h-[125vh] md:h-[115vh] lg:h-[115vh]"
-    //     id="tsparticles"
-    //     options={options}
-    //   />
-    //   }
-
-    // </div>
-    <div className="h-full w-full top-0 left-0 pointer-events-none z-50">
+    <>
       {init && <Particles
-        className=""
+        className="h-full w-full absolute top-0 left-0 pointer-events-none"
         id="tsparticles"
         options={options}
       />
       }
-    </div>
+    </>
 
   );
 };

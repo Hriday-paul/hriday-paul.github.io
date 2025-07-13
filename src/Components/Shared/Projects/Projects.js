@@ -5,6 +5,26 @@ import Project from "@/Components/Ui/Project/Project";
 const dataList1 = [
     {
         id: 0,
+        name: 'TACT VIP',
+        desc: 'Tact VIP is a sponsored promotional gaming platform. It was built with a strong focus on performance, UI, animation and seamless integration.',
+        photo: 'https://media.licdn.com/dms/image/v2/D4E22AQG0nuo7nazmXg/feedshare-shrink_1280/B4EZbzwD50HYAw-/0/1747846185747?e=1755129600&v=beta&t=jw78w2EJqCV4AhwJbxN72WjFckT_AyYLL0ndhJDUHYQ',
+        skills: ['Tailwind', 'Next Js', 'Type script', "Framer Motion", 'Redux query'],
+        live: 'https://tact.vip',
+        code : ''
+    },
+    {
+        id: 0,
+        name: 'ANY JOB',
+        desc: 'Developed a real-world job marketplace where users can post job requirements and service providers can browse, apply, and deliver services',
+        photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1752406884/test/Screenshot_2025-07-13_173856_is3pku.png',
+        skills: ['Tailwind', 'Next Js', 'Type script', "Framer Motion", 'Redux', 'Express', 'Mongodb'],
+        live: 'https://anyjob.ie',
+        code: ''
+    },
+]
+const dataList2 = [
+    {
+        id: 0,
         name: 'Construction',
         desc: 'Developed a real-life web application to manage and streamline construction processes, from project planning to completion.',
         photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1726817613/test/cgxctlrjdflmg0qjmt0z.png',
@@ -22,8 +42,8 @@ const dataList1 = [
         code: 'https://github.com/Hriday-paul/study-tracker'
     },
 ]
-const dataList2 = [
-    {
+const dataList3 = [
+     {
         id: 2,
         name: 'Diagnostic Center',
         desc: 'Developed a user-friendly web based diagnostic center management system website for efficient appointment booking and result tracking.',
@@ -41,26 +61,6 @@ const dataList2 = [
         live: 'https://message-friend.netlify.app',
         code: 'https://github.com/Hriday-paul/Chat-web'
     }, 
-]
-const dataList3 = [
-    {
-        id: 4,
-        name: 'Rich Text Editor',
-        desc: 'A Rich Text Editor application enables users to create and edit text with diverse formatting options.',
-        photo: textEditor,
-        skills: ['Html', 'Css', 'Bootstrap', 'Javascript'],
-        live: 'https://hriday-paul.github.io/web-text-editor',
-        code: 'https://github.com/Hriday-paul/web-text-editor'
-    },
-    {
-        id: 5,
-        name: 'Online Shoping',
-        desc: 'Designed an intuitive online shopping website for seamless browsing, ordering, and checkout experiences.',
-        photo: 'https://i.ibb.co/h2wyf13/Screenshot-2023-12-31-140130.png',
-        skills: ['Tailwind', 'React', 'Firebase', 'Express', 'Mongodb'],
-        live: 'https://online-shop-ferioyala.netlify.app',
-        code: 'https://github.com/Hriday-paul/online-shop-stack'
-    }
 ]
 
 const Projects = () => {

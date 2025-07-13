@@ -1,3 +1,4 @@
+"use client"
 import SingleSkill from "@/Components/Ui/SingleSkill/SingleSkill";
 import Image from "next/image";
 import { SiRedux, SiMysql } from "react-icons/si";
@@ -12,7 +13,7 @@ const Skills = () => {
         <div className="bg-gradient-to-bl from-[#082231] to-[#051620] -mt-28 z-30 pb-28 skills" id="skills">
             
             <div className="2xl:max-w-7xl max-w-6xl mx-auto px-4">
-                <div className="text-center pt-36 pb-10">
+                <div className="text-center pt-44 pb-10">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-popins text-white">Skills</h2>
                     <p className="mt-3 md:mt-3 lg:mt-5 text-base md:text-lg lg:text-xl font-medium font-popins text-gray-400">Here are some of my skills in web development.</p>
 

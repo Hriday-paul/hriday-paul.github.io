@@ -1,7 +1,7 @@
 'use client'
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { MdOutlineEmail, MdPhoneInTalk } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 
@@ -46,7 +46,7 @@ const Contact = () => {
                             </div>
                             <div className='flex flex-row gap-x-4 items-center'>
                                 <FaLocationDot className='text-2xl text-white' />
-                                <h3 className='text-base text-gray-200 font-medium font-popins' >Nimsar, Cumilla, Bangladesh</h3>
+                                <h3 className='text-base text-gray-200 font-medium font-popins' >Mohakhali, Dhaka, Bangladesh</h3>
                             </div>
                         </div>
 
@@ -74,7 +74,7 @@ const Contact = () => {
 
                     </div>
                 </div>
-                <Toaster></Toaster>
+                
             </section>
         </div>
     );

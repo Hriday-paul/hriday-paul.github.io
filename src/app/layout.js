@@ -1,5 +1,6 @@
-import "./globals.css";
 import ScrollAnim from "@/Components/Ui/ScrollAnim/ScrollAnim";
+import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "Hriday paul",
@@ -17,12 +18,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="min-h-screen bg-[#082231]">
 
+        <Toaster />
+
         <ScrollAnim />
 
         {children}
-
-        {/* <RoutingTab /> */}
-
       </body>
     </html>
   );

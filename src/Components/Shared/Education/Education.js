@@ -22,7 +22,7 @@ const Education = () => {
                                 <p className="text-xs  font-bold font-popins text-gray-400">June 2020 - August 2024</p>
                             </div>
                         </div>
-                        <h4 className="text-sm font-popins font-bold text-gray-400 mt-2">Grade : 3.73 / 4</h4>
+                        <h4 className="text-sm font-popins font-bold text-gray-400 mt-2">Grade : 3.74 / 4</h4>
                         <div className="text-sm text-gray-300 font-mono  mt-5">{"I'm currently studying a Diploma in Engineering in Computer Science. We have already covered basic data structures, algorithms, object-oriented"} <DiplomaShort /></div>
                     </div>
                     <div data-aos="fade-up" className="bg-white/5 border border-[#174d63] w-[340px] md:w-[440px] lg:w-[480px] mx-auto p-5 rounded-lg shadow-xl shadow-[#0d161a]">
