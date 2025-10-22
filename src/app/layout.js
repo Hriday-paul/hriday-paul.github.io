@@ -1,6 +1,7 @@
 import ScrollAnim from "@/Components/Ui/ScrollAnim/ScrollAnim";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata = {
   title: "Hriday paul",
@@ -16,6 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-NF8ZKPV3" />
       <body className="min-h-screen bg-[#082231]">
 
         <Toaster />
