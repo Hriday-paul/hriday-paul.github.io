@@ -1,5 +1,6 @@
 import school from '@/images/school.jpeg'
 import polytecnic from '@/images/politechnic.jpeg'
+import university_logo from '@/images/university_logo.png'
 import Image from "next/image";
 import DiplomaShort from '@/Components/Ui/DiplomaShort/DiplomaShort';
 
@@ -15,6 +16,19 @@ const Education = () => {
                     <div data-aos="fade-up" className="bg-white/5 border border-[#174d63] w-[350px] md:w-[440px] lg:w-[480px] mx-auto p-5 rounded-lg shadow-xl shadow-[#0d161a]">
                         <div className="flex flex-row gap-x-2 md:gap-x-3 lg:gap-x-4">
                             <Image
+                             className="rounded-lg h-12 w-auto md:h-16" src={university_logo} alt="polytechnic logo" />
+                            <div>
+                                <h3 className="text-base md:text-lg lg:text-xl font-popins font-bold text-gray-300">World University Of Bangladesh</h3>
+                                <p className="text-sm md:text-base lg:text-lg font-bold font-popins text-gray-400">Computer Science & Engineering</p>
+                                <p className="text-xs  font-bold font-popins text-gray-400">July 2025 - February 2029</p>
+                            </div>
+                        </div>
+                        {/* <h4 className="text-sm font-popins font-bold text-gray-400 mt-2">Running...</h4> */}
+                        <div className="text-sm text-gray-300 font-mono  mt-5">{"I'm currently studying BSC in Computer Science & Engineering. Here I'm learning data structures, algorithms, object-oriented"} <DiplomaShort /></div>
+                    </div>
+                    <div data-aos="fade-up" className="bg-white/5 border border-[#174d63] w-[350px] md:w-[440px] lg:w-[480px] mx-auto p-5 rounded-lg shadow-xl shadow-[#0d161a]">
+                        <div className="flex flex-row gap-x-2 md:gap-x-3 lg:gap-x-4">
+                            <Image
                              className="rounded-lg h-12 w-auto md:h-16" src={polytecnic} alt="polytechnic logo" />
                             <div>
                                 <h3 className="text-base md:text-lg lg:text-xl font-popins font-bold text-gray-300">Cumilla Polytechnic Institute, Cumilla</h3>
@@ -23,7 +37,7 @@ const Education = () => {
                             </div>
                         </div>
                         <h4 className="text-sm font-popins font-bold text-gray-400 mt-2">Grade : 3.74 / 4</h4>
-                        <div className="text-sm text-gray-300 font-mono  mt-5">{"I'm currently studying a Diploma in Engineering in Computer Science. We have already covered basic data structures, algorithms, object-oriented"} <DiplomaShort /></div>
+                        <div className="text-sm text-gray-300 font-mono  mt-5">{"I studied Diploma in Engineering in Computer Science. We have already covered basic data structures, algorithms, object-oriented"} <DiplomaShort /></div>
                     </div>
                     <div data-aos="fade-up" className="bg-white/5 border border-[#174d63] w-[340px] md:w-[440px] lg:w-[480px] mx-auto p-5 rounded-lg shadow-xl shadow-[#0d161a]">
                         <div className="flex flex-row gap-x-2 md:gap-x-3 lg:gap-x-4">

@@ -1,5 +1,3 @@
-
-import textEditor from '@/images/richEditor-img.png'
 import Project from "@/Components/Ui/Project/Project";
 
 const dataList1 = [
@@ -7,7 +5,7 @@ const dataList1 = [
         id: 0,
         name: 'TACT VIP',
         desc: 'Tact VIP is a sponsored promotional gaming platform. It was built with a strong focus on performance, UI, animation and seamless integration.',
-        photo: 'https://media.licdn.com/dms/image/v2/D4E22AQG0nuo7nazmXg/feedshare-shrink_1280/B4EZbzwD50HYAw-/0/1747846185747?e=1755129600&v=beta&t=jw78w2EJqCV4AhwJbxN72WjFckT_AyYLL0ndhJDUHYQ',
+        photo: 'https://res.cloudinary.com/devlj6p7h/image/upload/v1761144218/tact-vip-capture_dbkp8j.png',
         skills: ['Tailwind', 'Next Js', 'Type script', "Framer Motion", 'Redux query'],
         live: 'https://tact.vip',
         code : ''
